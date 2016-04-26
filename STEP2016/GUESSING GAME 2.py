@@ -17,14 +17,14 @@ def test_number(guess_num, tries, tries_remaining, has_won):
         print("It took you" (tries), "tries.")
         has_won = True
 
-    elif guess_num == random_number+1 or-1:
+    elif guess_num == random_number+1 or random_number-1:
         if tries_remaining > 0:
             print("Hot. You have" (tries_remaining), "tries remaining.")
         else:
             print("Sorry, but my number was "(random_number), ".")
             print("You are out of tries. Better luck next time.")
 
-    elif guess_num == random_number+2 or-2:
+    elif guess_num == random_number+2 or random_number-2:
         if tries_remaining > 0:
             print("Warm. You have ", (tries_remaining), "tries remaining.")
         else:
